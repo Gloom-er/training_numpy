@@ -1,0 +1,30 @@
+import numpy as np
+
+matrix = np.array([(1, 2, 3), (4, 5, 6), (7, 8, 9)])
+print(matrix)
+print(np.delete(matrix, 1, axis=0))
+print(np.delete(matrix, 1, axis=1))
+print(np.sin(matrix))
+print(np.log(matrix))
+print(np.sum(matrix))
+print(matrix.max())
+print(matrix.max(axis=0))
+print(matrix.max(axis=1))
+print(np.mean(matrix, axis=0))
+print(np.mean(matrix, axis=1))
+
+arr1 = np.array([(1, 2, 3), (4, 5, 6)])
+print(arr1)
+arr2 = np.array([(7, 8, 9), (10, 11, 12)])
+print(arr2)
+arr = np.concatenate((arr1, arr2), axis=1)
+print(arr)
+arr = np.concatenate((arr1, arr2), axis=0)
+print(arr)
+
+print(np.hstack((arr1, arr2)))
+print(np.vstack((arr1, arr2)))
+print(np.split(arr, 2))
+print(np.split(arr, 3, axis=1))
+
+print(np.append(arr, np.array([1, 2, 3])))
